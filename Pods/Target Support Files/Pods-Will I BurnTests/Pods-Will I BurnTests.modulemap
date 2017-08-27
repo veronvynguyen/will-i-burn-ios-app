@@ -1,0 +1,6 @@
+framework module Pods_Will_I_BurnTests {
+  umbrella header "Pods-Will I BurnTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
