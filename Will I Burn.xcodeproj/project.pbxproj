@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39202C7F1F5291BC00D69F57 /* cooper-hewitt in Resources */ = {isa = PBXBuildFile; fileRef = 39202C7E1F5291AA00D69F57 /* cooper-hewitt */; };
 		39CA253D1F52420600766C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA253C1F52420600766C19 /* AppDelegate.swift */; };
 		39CA253F1F52420600766C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA253E1F52420600766C19 /* ViewController.swift */; };
 		39CA25421F52420600766C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CA25401F52420600766C19 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39202C7E1F5291AA00D69F57 /* cooper-hewitt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cooper-hewitt"; sourceTree = "<group>"; };
 		39CA25391F52420600766C19 /* Will I Burn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Will I Burn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CA253C1F52420600766C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CA253E1F52420600766C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		39CA253B1F52420600766C19 /* Will I Burn */ = {
 			isa = PBXGroup;
 			children = (
+				39202C7E1F5291AA00D69F57 /* cooper-hewitt */,
 				39CA253C1F52420600766C19 /* AppDelegate.swift */,
 				39CA253E1F52420600766C19 /* ViewController.swift */,
 				39CA25401F52420600766C19 /* Main.storyboard */,
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39202C7F1F5291BC00D69F57 /* cooper-hewitt in Resources */,
 				39CA25471F52420600766C19 /* LaunchScreen.storyboard in Resources */,
 				39CA25441F52420600766C19 /* Assets.xcassets in Resources */,
 				39CA25421F52420600766C19 /* Main.storyboard in Resources */,
