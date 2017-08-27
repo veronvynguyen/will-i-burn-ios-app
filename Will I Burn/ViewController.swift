@@ -14,11 +14,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     var coords: CLLocationCoordinate2D?
     
+    @IBOutlet weak var skinTypeLabel: UILabel!
+    var skinType: String = Utilities().getSkinType() {
+        didSet {
+            updateSkinTypeLabel()
+            Utilities().setSkinType(value: skinType)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        updateSkinTypeLabel()
+    }
+    
+    @IBAction func skinTypeButtonClicked(_ sender: Any) {
+        let alert = UIAlertController(title: "Skin Type?", message: "Please choose one", preferredStyle: .actionSheet)
+        for var st in SkinType().allSkinTypes() {
+            alert.addAction(UIAlertAction(title: st, style: .default, handler: { (action) in
+                self.skinType = action.title!
+            }))
+        }
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -44,6 +64,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func updateSkinTypeLabel() {
+        skinTypeLabel.text = "Skin type: " + skinType
+    }
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39202C7F1F5291BC00D69F57 /* cooper-hewitt in Resources */ = {isa = PBXBuildFile; fileRef = 39202C7E1F5291AA00D69F57 /* cooper-hewitt */; };
+		39202C811F529C4F00D69F57 /* SkinTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39202C801F529C4F00D69F57 /* SkinTypes.swift */; };
+		39202C831F52B3C100D69F57 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39202C821F52B3C100D69F57 /* Utilities.swift */; };
 		39CA253D1F52420600766C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA253C1F52420600766C19 /* AppDelegate.swift */; };
 		39CA253F1F52420600766C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA253E1F52420600766C19 /* ViewController.swift */; };
 		39CA25421F52420600766C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CA25401F52420600766C19 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		39202C7E1F5291AA00D69F57 /* cooper-hewitt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cooper-hewitt"; sourceTree = "<group>"; };
+		39202C801F529C4F00D69F57 /* SkinTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinTypes.swift; sourceTree = "<group>"; };
+		39202C821F52B3C100D69F57 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39CA25391F52420600766C19 /* Will I Burn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Will I Burn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CA253C1F52420600766C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CA253E1F52420600766C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				39CA25431F52420600766C19 /* Assets.xcassets */,
 				39CA25451F52420600766C19 /* LaunchScreen.storyboard */,
 				39CA25481F52420600766C19 /* Info.plist */,
+				39202C801F529C4F00D69F57 /* SkinTypes.swift */,
+				39202C821F52B3C100D69F57 /* Utilities.swift */,
 			);
 			path = "Will I Burn";
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			files = (
 				39CA253F1F52420600766C19 /* ViewController.swift in Sources */,
 				39CA253D1F52420600766C19 /* AppDelegate.swift in Sources */,
+				39202C831F52B3C100D69F57 /* Utilities.swift in Sources */,
+				39202C811F529C4F00D69F57 /* SkinTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

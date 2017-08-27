@@ -12,6 +12,9 @@
         <array key="CooperHewitt-Book.otf">
             <string>CooperHewitt-Book</string>
         </array>
+        <array key="CooperHewitt-Thin.otf">
+            <string>CooperHewitt-Thin</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -22,23 +25,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWT-L7-i5f">
-                                <rect key="frame" x="156" y="320" width="62.5" height="27"/>
-                                <fontDescription key="fontDescription" name="CooperHewitt-Book" family="Cooper Hewitt" pointSize="27"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWT-L7-i5f">
+                                <rect key="frame" x="164" y="307" width="48" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="6eV-IG-IkE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Book" family="Cooper Hewitt" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g36-2g-QxL">
+                                <rect key="frame" x="16" y="20" width="300" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="P2u-bH-gzq"/>
+                                    <constraint firstAttribute="width" constant="300" id="wyS-m2-bNU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Thin" family="Cooper Hewitt" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1U-nR-XkX">
+                                <rect key="frame" x="16" y="57" width="65" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="O27-tW-fF2"/>
+                                    <constraint firstAttribute="height" constant="37" id="RaD-MB-ERC"/>
+                                </constraints>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skinTypeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9z-lB-9PV"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zWT-L7-i5f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KOL-rs-bia"/>
+                            <constraint firstItem="g36-2g-QxL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LC4-cg-S5Y"/>
+                            <constraint firstItem="P1U-nR-XkX" firstAttribute="top" secondItem="g36-2g-QxL" secondAttribute="bottom" constant="-7" id="hhn-eM-JcH"/>
                             <constraint firstItem="zWT-L7-i5f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nyo-Zb-1mz"/>
+                            <constraint firstItem="P1U-nR-XkX" firstAttribute="leading" secondItem="g36-2g-QxL" secondAttribute="leading" id="scu-3E-UH1"/>
+                            <constraint firstItem="g36-2g-QxL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vyN-GS-aiH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="skinTypeLabel" destination="g36-2g-QxL" id="bsJ-U6-AKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="56.221889055472268"/>
         </scene>
     </scenes>
 </document>
